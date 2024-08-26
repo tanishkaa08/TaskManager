@@ -1,0 +1,11 @@
+{
+    "name":"taskmanager",
+    "version":"1.0.0",
+    "description":"This is an extension to manage your tasks effectively",
+    "manifest_version": 3,
+    "author":"geniune",
+    "action":{
+        "default_popup":"index.html",
+        "default_title":"productivity"
+    }
+}

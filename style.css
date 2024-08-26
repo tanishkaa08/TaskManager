@@ -1,0 +1,156 @@
+/* General styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f9fc;
+    width: 500px;
+    height: 400px;
+    margin: 20px;
+    overflow: hidden; /* Prevents scrollbars */
+    border-radius: 20px;
+    color: #333;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 600;
+    background-color: rgb(237, 237, 237); /* Light background color */
+    border-bottom: 1px solid #ddd; /* Border below the tabs */
+}
+
+.nav a {
+    color: rgb(97, 97, 97);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 12px; /* Rounded corners */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for background and shadow */
+}
+
+.nav a.active {
+    color: black;
+    background-color: #ffffff; /* Change background for active */
+    border: 1px solid rgb(118, 113, 113); /* Border for active */
+    box-shadow: 0px 0px 5px rgb(164, 159, 159); /* Shadow for active */
+    transform: translateY(-2px); /* Slight lift for active */
+}
+
+.nav a:not(.active):hover {
+    color: black;
+    background-color: #f0f0f0; /* Change background on hover */
+    box-shadow: 0px 0px 5px rgb(200, 200, 200); /* Shadow on hover */
+}
+
+.intro {
+    margin: 20px;
+    font-size: 18px;
+    color: #555;
+}
+
+.name {
+    font-weight: bold;
+    color: #4b6cb7;
+}
+
+.todaydate {
+    font-size: 16px;
+    color: #888;
+}
+
+/* Task container styles */
+.tasks-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+/* Add this to your existing CSS file */
+.task-checkbox {
+    margin-right: 10px;
+    transform: scale(1.2); /* Enlarge the checkbox */
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+.task-box {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    padding: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+.task-box:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    margin: 20px;
+}
+
+.header h1 {
+    font-size: 24px;
+    margin: 0;
+    color: #333;
+}
+
+.plus img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.plus img:hover {
+    transform: rotate(90deg);
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.task input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.task input[type="text"] {
+    flex-grow: 1;
+    border: none;
+    background-color: #f7f9fc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.task input[type="text"]:focus {
+    background-color: #e3e6ed;
+    outline: none;
+}

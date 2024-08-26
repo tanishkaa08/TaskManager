@@ -1,0 +1,161 @@
+/* General styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f9fc;
+    width: 500px;
+    height: 400px;
+    margin: 20px;
+    overflow: hidden; /* Prevents scrollbars */
+    border-radius: 20px;
+    color: #333;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 600;
+    background-color: rgb(237, 237, 237); /* Light background color */
+    border-bottom: 1px solid #ddd; /* Border below the tabs */
+}
+
+.nav a {
+    color: rgb(97, 97, 97);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 12px; /* Rounded corners */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for background and shadow */
+}
+
+.nav a.active {
+    color: black;
+    background-color: #ffffff; /* Change background for active */
+    border: 1px solid rgb(118, 113, 113); /* Border for active */
+    box-shadow: 0px 0px 5px rgb(164, 159, 159); /* Shadow for active */
+    transform: translateY(-2px); /* Slight lift for active */
+}
+
+.nav a:not(.active):hover {
+    color: black;
+    background-color: #f0f0f0; /* Change background on hover */
+    box-shadow: 0px 0px 5px rgb(200, 200, 200); /* Shadow on hover */
+}
+
+.intro {
+    margin: 20px;
+    font-size: 18px;
+    color: #555;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.intro h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.date-display {
+    margin: 10px;
+    font-size: 16px;
+    color: #888;
+    text-align: center;
+}
+
+/* Task container styles */
+.task-container {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.task-container input[type="text"],
+.task-container input[type="datetime-local"] {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    font-size: 14px;
+}
+
+.task-container input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2); /* Larger checkbox */
+}
+
+.task-container input[type="datetime-local"] {
+    width: 150px;
+}
+
+/* Plus button styling */
+.plus img {
+    width: 25px;
+    height: 25px;
+    margin-left:48%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.plus img:hover {
+    transform: rotate(90deg);
+}
+.task-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.task-content {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.task-content input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="datetime-local"] {
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.delete-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #cc0000;
+}
+
